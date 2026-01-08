@@ -1,0 +1,98 @@
+:root {
+    /* Color Palette */
+    --color-bg: #FFFFFF;
+    --color-text: #4A4A4A;
+    /* Slightly softer than pure black */
+    --color-text-light: #888888;
+    --color-main: #7B8ED1;
+    /* Soft Blue-Violet */
+    --color-main-light: #EBF1F7;
+    /* Very pale blue for backgrounds/accents */
+    --color-accent: rgba(123, 142, 209, 0.4);
+    /* Glassy accent */
+    --color-line: #E0E6ED;
+
+    /* Typography */
+    --font-jp: "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", serif;
+    --font-en: "Helvetica Neue", Arial, sans-serif;
+
+    /* Spacing */
+    --spacing-section: 120px;
+    --spacing-block: 40px;
+}
+
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-en);
+    /* Default to sans-serif for numbers/en */
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+
+    /* Stained Glass Borders */
+    background-image: url('stained_glass_custom_cropped.jpg'), url('stained_glass_custom_cropped.jpg');
+    background-position: left top, right top;
+    background-repeat: repeat-y;
+    background-size: 60px auto;
+    /* Increased width 3x (20px -> 60px) */
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Ensure content doesn't touch borders directly on small screens */
+@media (max-width: 600px) {
+    body {
+        background-size: 36px auto;
+        /* Increased width 3x (12px -> 36px) */
+    }
+    
+    /* Increase padding to clear the 36px borders */
+    .container {
+        padding: 0 42px; 
+    }
+    
+    /* Slightly smaller title on mobile */
+    h1 {
+        font-size: 1.8rem !important;
+    }
+}
+
+/* Typography Utilities */
+.font-jp {
+    font-family: var(--font-jp);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-main {
+    color: var(--color-main);
+}
+
+/* Layout */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Sections */
+section {
+    padding-bottom: var(--spacing-section);
+}
+
+/* Stained Glass Accent (Utility) */
+.glass-accent {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(123, 142, 209, 0.1));
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 20px rgba(123, 142, 209, 0.1);
+}
