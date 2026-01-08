@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurumi's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400&family=Shippori+Mincho:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Overwrite font variables with Google Fonts */
+        :root {
+            --font-jp: "Shippori Mincho", serif;
+            --font-sans: "Zen Kaku Gothic New", sans-serif;
+        }
+
+        body {
+            font-family: var(--font-jp);
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section id="hero" style="padding-top: 12vh;">
+            <div class="text-center">
+                <!-- Profile Icon -->
+                <div style="margin-bottom: 2rem;">
+                    <img src="profile_icon.jpg" alt="Kurumi Profile"
+                        style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-main-light); box-shadow: 0 4px 12px rgba(123, 142, 209, 0.2);">
+                </div>
+
+                <p class="font-sans"
+                    style="font-size: 0.9rem; letter-spacing: 0.1em; color: var(--color-main); margin-bottom: 1.5rem;">
+                    歴史×デジタルクリエイター</p>
+                <h1 style="font-size: 2rem; margin-bottom: 2rem; font-weight: 500; letter-spacing: 0.05em;">くるみ</h1>
+
+                <div class="glass-accent"
+                    style="padding: 2.5rem 2rem; border-radius: 4px; display: inline-block; width: 100%; max-width: 500px;">
+                    <p style="font-size: 1.15rem; line-height: 2; margin: 0; font-feature-settings: 'palt';">
+                        伝えたい想いを、<br>
+                        ちゃんと届く形へ
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Business Content -->
+        <section id="about">
+            <h2 class="font-sans"
+                style="font-size: 0.9rem; color: var(--color-main); letter-spacing: 0.2em; text-align: center; margin-bottom: 3rem;">
+                SERVICE</h2>
+            <div style="border-left: 1px solid var(--color-main); padding-left: 24px; margin-left: 12px;">
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 1.5rem;">
+                        <strong>AI活用支援</strong>
+                        <p style="font-size: 0.9rem; color: var(--color-text-light); margin-top: 0.3rem;">
+                            業務効率化やクリエイティブなAI活用のサポート</p>
+                    </li>
+                    <li style="margin-bottom: 1.5rem;">
+                        <strong>コンテンツ制作（文章・デザイン）</strong>
+                        <p style="font-size: 0.9rem; color: var(--color-text-light); margin-top: 0.3rem;">
+                            想いを言語化し、伝わるデザインで形にします</p>
+                    </li>
+                    <li style="margin-bottom: 1.5rem;">
+                        <strong>SNS運用代行</strong>
+                        <p style="font-size: 0.9rem; color: var(--color-text-light); margin-top: 0.3rem;">
+                            世界観を大切にした発信のサポート</p>
+                    </li>
+                    <li style="margin-bottom: 1.5rem;">
+                        <strong>キャッチコピー・ロゴ</strong>
+                    </li>
+                    <li style="margin-bottom: 1.5rem;">
+                        <strong>メルマガ・LINE・LP</strong>
+                    </li>
+                    <li style="margin-bottom: 1.5rem;">
+                        <strong>インタビュー</strong>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Links -->
+        <section id="links">
+            <h2 class="font-sans"
+                style="font-size: 0.9rem; color: var(--color-main); letter-spacing: 0.2em; text-align: center; margin-bottom: 3rem;">
+                LINKS</h2>
+            <div class="text-center">
+                <a href="https://youtu.be/r8IfFVK0IwA?si=DreKM3IrHFF87iGT" target="_blank"
+                    style="display: block; text-decoration: none; color: var(--color-text); margin-bottom: 1.5rem; transition: opacity 0.3s; opacity: 0.8;">
+                    <span class="font-sans"
+                        style="border-bottom: 1px solid var(--color-line); padding-bottom: 4px;">YouTube Channel</span>
+                    <span
+                        style="display: block; font-size: 0.8rem; margin-top: 8px; color: var(--color-text-light);">動画作品をご覧いただけます</span>
+                </a>
+
+                <!-- Note Placeholder -->
+                <div style="color: var(--color-text-light); opacity: 0.5; margin-top: 2rem;">
+                    <span class="font-sans"
+                        style="border-bottom: 1px solid var(--color-line); padding-bottom: 4px;">Note (Coming
+                        Soon)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" style="padding-bottom: 60px;">
+            <h2 class="font-sans"
+                style="font-size: 0.9rem; color: var(--color-main); letter-spacing: 0.2em; text-align: center; margin-bottom: 3rem;">
+                CONTACT</h2>
+            <div class="text-center glass-accent" style="padding: 3rem 1rem; border-radius: 2px;">
+                <p style="margin-bottom: 1rem; font-size: 0.9rem;">お仕事のご相談・お問い合わせ</p>
+                <a href="mailto:funkyfam.dpooriku@gmail.com" id="email-link"
+                    style="font-size: 1rem; color: var(--color-main); text-decoration: none; font-family: var(--font-sans); letter-spacing: 0.05em; word-break: break-all;">
+                    funkyfam.dpooriku@gmail.com
+                </a>
+                <p style="margin-top: 1rem; font-size: 0.8rem; color: var(--color-text-light); cursor: pointer;"
+                    onclick="copyEmail()">
+                    Click to copy
+                </p>
+            </div>
+        </section>
+
+        <footer class="text-center" style="padding-bottom: 40px; font-size: 0.7rem; color: var(--color-text-light);">
+            &copy; 2026 Kurumi
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
